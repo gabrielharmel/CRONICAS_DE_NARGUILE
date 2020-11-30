@@ -41,17 +41,9 @@ def main():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
-
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
             c2f12()
         
-        #este elif é responsável pelos créditos jogo
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             morrer_c2f12()
         
@@ -108,17 +100,10 @@ def opcao():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
             main()
         
-        #este elif é responsável pelos créditos jogo
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             jogo.main()
 
@@ -165,14 +150,8 @@ def c2f12():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
             morrer_c2f12()
         
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
@@ -231,17 +210,10 @@ def opcao_c2f12():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
             c2f12()
         
-        #este elif é responsável pelos créditos jogo
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             jogo.main()
 
@@ -288,20 +260,13 @@ def morrer_c2f12():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
             main()
         
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             jogo.main()
         
-        #este elif é responsável para voltar ao menu
         elif comando[pygame.K_ESCAPE]:
             opcao()
 
@@ -348,15 +313,9 @@ def c2f13():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
-            morrer_c2f12()
+            caminho1.c1f20()
         
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             caminho1.c1f20()
@@ -414,17 +373,10 @@ def opcao_c2f13():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
             c2f13()
         
-        #este elif é responsável pelos créditos jogo
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             jogo.main()
 

@@ -40,13 +40,11 @@ def main():
         comando = pygame.key.get_pressed()
 
         """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
+        de if e elif."""
 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
-            """Aqui temos um outro espaço onde estão armazenados todas as telas
-            iniciais do jogo, ou seja, causas, consequências e personagens do jogo.
-            Chamamos este outro código de periodo1.Ele vai importar todas as informações
-            do outro código."""
+            """Se cair nesse if, o sistema vai "puxar" o método principal do módulo
+            periodo1."""
             periodo1.main()
         
         #este elif é responsável pelos créditos jogo
@@ -55,7 +53,8 @@ def main():
 
         #este elif é responsável pelas opções do jogo
         elif comando[pygame.K_KP3] or comando[pygame.K_3]:
-            #fundo = pygame.image.load('imagens/opcoes.png')
+            """Para auxiliar na ilustração das opções, foi necessário criar este
+            módulo para exibir corretamente as telas."""
             opcoes()
 
         #este elif é responsável por sair do jogo
@@ -114,13 +113,16 @@ def opcoes():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
+        """Aqui temos uma parte destinada as condições desse módulo."""
 
+        #este if serve para exibir a tela de como jogar 
         if comando[pygame.K_KP1] or comando[pygame.K_1]:
             como_jogar()
+        #este elif serve para exibir a tela dos controles
         elif comando[pygame.K_KP2] or comando[pygame.K_2]:
             controles()
+        # este elif serve para voltar ao módulo main, ou seja, para o principal
+        # do módulo jogo
         elif comando[pygame.K_ESCAPE]:
             main()
     
@@ -135,11 +137,8 @@ def opcoes():
     pygame.quit()
 
 def como_jogar():
-    """Aqui está o método chamado de opcoes. Basicamente ele funciona assim:
-    Quando pressionada a tecla 3 no menu, será exibida uma tela com duas opções.
-    Se o jogador clicar 1, ele será direcionado para uma tela que contém uma 
-    explicaçã de como jogar o jogo. Caso o jogador aperte 2, ele será direcionado
-    para uma outra tela onde contém todas as informações acerca dos controles."""
+    """Aqui está o método chamado de como_jogar. A função é exibir a tela 
+    de como jogar."""
     
     #este comando é responsável por inicializar os módulos 
     pygame.init()
@@ -173,9 +172,9 @@ def como_jogar():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
+        """Aqui temos uma parte destinada a todas as condições do módulo."""
 
+        # este if serve para voltar a tela de opções
         if comando[pygame.K_ESCAPE]:
            opcoes()
     
@@ -190,11 +189,8 @@ def como_jogar():
     pygame.quit()
 
 def controles():
-    """Aqui está o método chamado de opcoes. Basicamente ele funciona assim:
-    Quando pressionada a tecla 3 no menu, será exibida uma tela com duas opções.
-    Se o jogador clicar 1, ele será direcionado para uma tela que contém uma 
-    explicaçã de como jogar o jogo. Caso o jogador aperte 2, ele será direcionado
-    para uma outra tela onde contém todas as informações acerca dos controles."""
+    """Aqui está o método chamado de opcoes. A sua função é exibir a tela dos
+    controles."""
     
     #este comando é responsável por inicializar os módulos 
     pygame.init()
@@ -228,9 +224,9 @@ def controles():
         #esta variável armazenará o comando de entrada no teclado
         comando = pygame.key.get_pressed()
 
-        """Aqui temos uma parte destinada a todas as telas do jogo com um conjunto
-        enorme de if, elif e else."""
+        """Aqui temos uma parte destinada as condições desse método."""
 
+        #este if serve para voltar no método de opções
         if comando[pygame.K_ESCAPE]:
             opcoes()
     
